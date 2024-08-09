@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* 전반적인 바탕 스타일 */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #495057;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 스타일 */
+h1 {
+    color: #343a40;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* 투두 리스트 스타일 */
+ul.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+ul.todo-list li:last-child {
+    border-bottom: none;
+}
+
+/* 투두 항목 스타일 */
+.todo-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.todo-item span {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.todo-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.todo-item button:hover {
+    background-color: #c82333;
+}
+
+/* 추가 투두 스타일 */
+.add-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-todo form {
+    display: flex;
+    width: 100%;
+}
+
+.add-todo input[type="text"] {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.add-todo input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.add-todo button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.add-todo button:hover {
+    background-color: #0056b3;
+}

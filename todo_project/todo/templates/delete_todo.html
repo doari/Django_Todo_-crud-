@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete To-Do</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Delete To-Do</h1>
+            <a href="{% url 'index' %}" class="btn">Back to List</a>
+        </header>
+        <p>Are you sure you want to delete "{{ todo.title }}"?</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-submit">Confirm Delete</button>
+        </form>
+    </div>
+</body>
+</html>
